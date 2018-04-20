@@ -21,7 +21,7 @@ import static ro.db.appl.config.persistence.Constants.PROPERTY_DIALECT;
 import static ro.db.appl.config.persistence.Constants.PROPERTY_SHOW_SQL;
 
 @Configuration
-@ComponentScan("ro.db.appl.resource")
+@ComponentScan("ro.db.appl.service")
 @EnableJpaRepositories("ro.db.appl.repository")
 @EnableTransactionManagement
 @PropertySource("classpath:database.properties")
