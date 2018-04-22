@@ -2,7 +2,9 @@ import { Component, OnInit} from '@angular/core';
 import { EventsService } from './events.service';
 import { Events } from './events.model';
 import { RouterLink } from '@angular/router';
-
+import { ModalComponent } from '../modal/modal.component';
+import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
+import { BsModalService } from 'ngx-bootstrap/modal/bs-modal.service';
 
 
 @Component({
@@ -12,8 +14,10 @@ import { RouterLink } from '@angular/router';
   })
   export class EventsComponent implements OnInit{
     eventsList: Events[];
+    bsModalRef: BsModalRef;;
     
-   constructor(private eventsService: EventsService
+   constructor(private eventsService: EventsService,
+    private modalService: BsModalService
     ){
      
    }
@@ -25,4 +29,8 @@ import { RouterLink } from '@angular/router';
        this.eventsList = response;
      })
    }
+   openRegisterModal() {
+    const initialState = { callbackFunction: this.getEvents.bind(this) };
+    this.bsModalRef = this.modalService.show(ModalComponent, { initialState });
+  }
   }

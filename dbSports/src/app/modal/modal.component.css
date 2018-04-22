@@ -1,0 +1,74 @@
+.modal__box {
+    width: 750px;
+    height: 750px;
+    background: white;
+    box-shadow: 0 0 26px 6px;
+   margin: 0 auto;
+}
+
+.modal__content {
+    padding: 50px 75px;
+}
+
+.inputs__container {
+    display:block;
+    justify-content: space-between;
+   
+    margin-top: 50px;
+}
+.gender{
+   display: flex;
+}
+.genderBtn{
+   
+   
+    height: 15px;
+    width: 15px;
+    background-color: #0000CD;
+    border-radius: 50%;
+}
+.genderBtn:after{
+    top:9px;
+    left:9px;
+    height:8px;
+    border-radius: 50%;
+    background: white;
+}
+.input {
+    width: 400px;
+    height: 35px;
+    display: block;
+    border: 1px solid #9b9b9b;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Cardo', serif;
+    padding: 0 5px;
+    margin-bottom: 25px;
+}
+
+.input--big {
+    width: 100%;
+}
+
+.textarea {
+    display: block;
+    border: 1px solid #9b9b9b;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Cardo', serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.modal__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.button--pink {
+    background: #FFE3E3;
+}
+.modal-dialog {
+  max-width: 1000px;
+}
