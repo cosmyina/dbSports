@@ -23,8 +23,11 @@ public class Competition {
     @Column(name = "place")
     private String place;
 
-    @Column(name = "date")
-    private Date date;
+    @Column(name = "day")
+    private Long day;
+
+    @Column(name = "month")
+    private String month;
 
     @ManyToOne(cascade = REFRESH)
     @JoinColumn(name = "category_id")
@@ -54,12 +57,20 @@ public class Competition {
         this.place = place;
     }
 
-    public Date getDate() {
-        return date;
+    public Long getDay() {
+        return day;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDay(Long day) {
+        this.day = day;
+    }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public void setMonth(String month) {
+        this.month = month;
     }
 
     public Category getCategory() {
@@ -76,7 +87,8 @@ public class Competition {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", place='" + place + '\'' +
-                ", date=" + date +
+                ", day=" + day +
+                ", month='" + month + '\'' +
                 ", category=" + category +
                 '}';
     }
@@ -86,7 +98,8 @@ public class Competition {
         private Long id;
         private String name;
         private String place;
-        private Date date;
+        private Long day;
+        private String month;
         private Category category;
 
         private CompetitionBuilder() {
@@ -111,8 +124,13 @@ public class Competition {
             return this;
         }
 
-        public CompetitionBuilder withDate(Date date) {
-            this.date = date;
+        public CompetitionBuilder withDay(Long day) {
+            this.day = day;
+            return this;
+        }
+
+        public CompetitionBuilder withMonth(String month) {
+            this.month = month;
             return this;
         }
 
@@ -126,7 +144,8 @@ public class Competition {
             competition.setId(id);
             competition.setName(name);
             competition.setPlace(place);
-            competition.setDate(date);
+            competition.setDay(day);
+            competition.setMonth(month);
             competition.setCategory(category);
             return competition;
         }
