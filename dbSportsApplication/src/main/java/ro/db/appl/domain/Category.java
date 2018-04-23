@@ -2,7 +2,12 @@ package ro.db.appl.domain;
 
 import javax.persistence.*;
 
+import java.util.List;
+
+import static javax.persistence.CascadeType.ALL;
+import static javax.persistence.CascadeType.REFRESH;
 import static javax.persistence.GenerationType.AUTO;
+import static javax.persistence.GenerationType.SEQUENCE;
 
 @Entity
 @Table(name = "categories")

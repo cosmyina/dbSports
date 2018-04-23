@@ -1,9 +1,11 @@
 package ro.db.appl.service;
 
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ro.db.appl.domain.Category;
+import ro.db.appl.domain.Competition;
 import ro.db.appl.repository.CategoryRepository;
 
 import javax.inject.Inject;
@@ -58,6 +60,12 @@ public class CategoryServiceImpl implements CategoryService {
     public Category findById(Long id) {
         Optional<Category> byId = this.categoryRepository.findById(id);
         return byId.orElse(null);
+    }
+
+    @Override
+    public List<Competition> findByCategory(String name) {
+        Stream<Competition> stream = this.categoryRepository.findByCategory(name).stream();
+        return stream.collect(Collectors.toList());
     }
 
 }

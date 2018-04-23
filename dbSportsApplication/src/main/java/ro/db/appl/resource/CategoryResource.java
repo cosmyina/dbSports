@@ -1,8 +1,10 @@
 package ro.db.appl.resource;
 
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.*;
 import ro.db.appl.domain.Category;
+import ro.db.appl.domain.Competition;
 import ro.db.appl.service.CategoryService;
 
 import javax.inject.Inject;
@@ -52,6 +54,11 @@ public class CategoryResource {
     @GetMapping("/{start}/{rows}")
     public List<Category> findAll(@PathVariable("start") Integer start, @PathVariable("rows") Integer rows) {
         return this.categoryService.findAll(PageRequest.of(start, rows));
+    }
+
+    @GetMapping("/competitions/{name}")
+    List<Competition> findByCategory(@PathVariable("name") String name) {
+        return this.categoryService.findByCategory(name);
     }
 
 }
