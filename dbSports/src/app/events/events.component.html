@@ -1,25 +1,25 @@
+<div class="content">
+	<div class="container">
 
-	
-	<div class="content">
-		<div class="container">
+		<div class="main-content">
+			<h1>Upcoming events</h1>
+			<section class="posts-con">
+				<article *ngFor="let events of eventsList">
+					<div class="current-date">
+						<p class="month">{{events.month}}</p>
+						<p class="day">{{events.day}}</p>
+					</div>
+					<div class="info">
+						<h3 class="title">{{events.title}}</h3>
+						<p class="info-line">
+							<span class="place">{{events.location}}</span>
+						</p>
+						<p>{{events.description}}</p>
+					</div>
+					<button id="register" type="submit" class="button" (click)="openRegisterModal()">Register now!</button>
+				</article>
 
-			<div class="main-content">
-				<h1>Upcoming events</h1>
-				<section class="posts-con">
-					<article *ngFor="let events of eventsList">
-						<div class="current-date">
-							<p class="month">{{events.month}}</p>
-							<p class="day">{{events.day}}</p>
-						</div>
-						<div class="info">
-							<h3 class ="title">{{events.title}}</h3>
-							<p class="info-line"><span class="place">{{events.location}}</span></p>
-							<p>{{events.description}}</p>
-                        </div>
-                        <button id = "register" type="submit" class="button" (click)="openRegisterModal()">Register now!</button>
-					</article>
-					
-				</section>
-			</div>
-			</div>
+			</section>
+		</div>
 	</div>
+</div>
