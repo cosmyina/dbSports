@@ -1,0 +1,101 @@
+INFO main org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO main org.hibernate.Version - HHH000412: Hibernate Core {5.2.8.Final}
+INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+INFO main org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO main org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2ed3b1f5
+INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO main org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3447 ms
+INFO main org.xnio - XNIO version 3.3.6.Final
+INFO main org.xnio.nio - XNIO NIO Implementation Version 3.3.6.Final
+INFO XNIO-1 task-1 io.undertow.servlet - Initializing Spring FrameworkServlet 'DispatcherServlet'
+INFO XNIO-1 task-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'DispatcherServlet': initialization started
+INFO XNIO-1 task-1 org.springframework.web.context.support.AnnotationConfigWebApplicationContext - Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Sun Apr 22 15:58:04 EEST 2018]; parent: Root WebApplicationContext
+INFO XNIO-1 task-1 org.springframework.web.context.support.AnnotationConfigWebApplicationContext - Found 1 annotated classes in package [ro.db.appl.config.web]
+INFO XNIO-1 task-1 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/category/{id}],methods=[DELETE]}" onto public ro.db.appl.domain.Category ro.db.appl.resource.CategoryResource.remove(java.lang.Long)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/category],methods=[PUT]}" onto public ro.db.appl.domain.Category ro.db.appl.resource.CategoryResource.update(ro.db.appl.domain.Category)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/category],methods=[POST]}" onto public ro.db.appl.domain.Category ro.db.appl.resource.CategoryResource.create(ro.db.appl.domain.Category)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/category/{name}/{start}/{rows}],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Category> ro.db.appl.resource.CategoryResource.findByName(java.lang.String,java.lang.Integer,java.lang.Integer)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/category/competitions/{name}],methods=[GET]}" onto java.util.List<ro.db.appl.domain.Competition> ro.db.appl.resource.CategoryResource.findByCategory(java.lang.String)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/category/{start}/{rows}],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Category> ro.db.appl.resource.CategoryResource.findAll(java.lang.Integer,java.lang.Integer)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/category],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Category> ro.db.appl.resource.CategoryResource.findAll()
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/category/{id}],methods=[GET]}" onto public ro.db.appl.domain.Category ro.db.appl.resource.CategoryResource.findById(java.lang.Long)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competition/{id}],methods=[DELETE]}" onto public ro.db.appl.domain.Competition ro.db.appl.resource.CompetitionResource.remove(java.lang.Long)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competition],methods=[PUT]}" onto public ro.db.appl.domain.Competition ro.db.appl.resource.CompetitionResource.update(ro.db.appl.domain.Competition)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competition],methods=[POST]}" onto public ro.db.appl.domain.Competition ro.db.appl.resource.CompetitionResource.create(ro.db.appl.domain.Competition)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competition/{start}/{rows}],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Competition> ro.db.appl.resource.CompetitionResource.findAll(java.lang.Integer,java.lang.Integer)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competition],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Competition> ro.db.appl.resource.CompetitionResource.findAll()
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competition/{id}],methods=[GET]}" onto public ro.db.appl.domain.Competition ro.db.appl.resource.CompetitionResource.findById(java.lang.Long)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/race/{id}],methods=[DELETE]}" onto public ro.db.appl.domain.Race ro.db.appl.resource.RaceResource.remove(java.lang.Long)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/race],methods=[PUT]}" onto public ro.db.appl.domain.Race ro.db.appl.resource.RaceResource.update(ro.db.appl.domain.Race)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/race],methods=[POST]}" onto public ro.db.appl.domain.Race ro.db.appl.resource.RaceResource.create(ro.db.appl.domain.Race)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/race/{start}/{rows}],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Race> ro.db.appl.resource.RaceResource.findAll(java.lang.Integer,java.lang.Integer)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/race],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Race> ro.db.appl.resource.RaceResource.findAll()
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/race/{id}],methods=[GET]}" onto public ro.db.appl.domain.Race ro.db.appl.resource.RaceResource.findById(java.lang.Long)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Sun Apr 22 15:58:04 EEST 2018]; parent: Root WebApplicationContext
+INFO XNIO-1 task-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'DispatcherServlet': initialization completed in 731 ms
+INFO main io.undertow.servlet - Initializing Spring root WebApplicationContext
+INFO main org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+INFO main org.springframework.web.context.support.AnnotationConfigWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Sun Apr 22 17:14:47 EEST 2018]; root of context hierarchy
+INFO main org.springframework.web.context.support.AnnotationConfigWebApplicationContext - Found 1 annotated classes in package [ro.db.appl.config.persistence]
+INFO main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO main org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: org.postgresql.Driver
+INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+INFO main org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+INFO main org.hibernate.Version - HHH000412: Hibernate Core {5.2.8.Final}
+INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+INFO main org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO main org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7e242b4d
+INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO main org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3263 ms
+INFO main org.xnio - XNIO version 3.3.6.Final
+INFO main org.xnio.nio - XNIO NIO Implementation Version 3.3.6.Final
+INFO XNIO-1 task-1 io.undertow.servlet - Initializing Spring FrameworkServlet 'DispatcherServlet'
+INFO XNIO-1 task-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'DispatcherServlet': initialization started
+INFO XNIO-1 task-1 org.springframework.web.context.support.AnnotationConfigWebApplicationContext - Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Sun Apr 22 17:14:57 EEST 2018]; parent: Root WebApplicationContext
+INFO XNIO-1 task-1 org.springframework.web.context.support.AnnotationConfigWebApplicationContext - Found 1 annotated classes in package [ro.db.appl.config.web]
+INFO XNIO-1 task-1 org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/category/{id}],methods=[DELETE]}" onto public ro.db.appl.domain.Category ro.db.appl.resource.CategoryResource.remove(java.lang.Long)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/category],methods=[PUT]}" onto public ro.db.appl.domain.Category ro.db.appl.resource.CategoryResource.update(ro.db.appl.domain.Category)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/category],methods=[POST]}" onto public ro.db.appl.domain.Category ro.db.appl.resource.CategoryResource.create(ro.db.appl.domain.Category)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/category/{name}/{start}/{rows}],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Category> ro.db.appl.resource.CategoryResource.findByName(java.lang.String,java.lang.Integer,java.lang.Integer)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/category/competitions/{name}],methods=[GET]}" onto java.util.List<ro.db.appl.domain.Competition> ro.db.appl.resource.CategoryResource.findByCategory(java.lang.String)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/category/{id}],methods=[GET]}" onto public ro.db.appl.domain.Category ro.db.appl.resource.CategoryResource.findById(java.lang.Long)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/category],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Category> ro.db.appl.resource.CategoryResource.findAll()
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/category/{start}/{rows}],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Category> ro.db.appl.resource.CategoryResource.findAll(java.lang.Integer,java.lang.Integer)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competition/{id}],methods=[DELETE]}" onto public ro.db.appl.domain.Competition ro.db.appl.resource.CompetitionResource.remove(java.lang.Long)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competition],methods=[PUT]}" onto public ro.db.appl.domain.Competition ro.db.appl.resource.CompetitionResource.update(ro.db.appl.domain.Competition)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competition],methods=[POST]}" onto public ro.db.appl.domain.Competition ro.db.appl.resource.CompetitionResource.create(ro.db.appl.domain.Competition)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competition/{id}],methods=[GET]}" onto public ro.db.appl.domain.Competition ro.db.appl.resource.CompetitionResource.findById(java.lang.Long)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competition/{start}/{rows}],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Competition> ro.db.appl.resource.CompetitionResource.findAll(java.lang.Integer,java.lang.Integer)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competition],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Competition> ro.db.appl.resource.CompetitionResource.findAll()
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competitor/{id}],methods=[DELETE]}" onto public ro.db.appl.domain.Competitor ro.db.appl.resource.CompetitorResource.remove(java.lang.Long)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competitor],methods=[PUT]}" onto public ro.db.appl.domain.Competitor ro.db.appl.resource.CompetitorResource.update(ro.db.appl.domain.Competitor)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competitor],methods=[POST]}" onto public ro.db.appl.domain.Competitor ro.db.appl.resource.CompetitorResource.create(ro.db.appl.domain.Competitor)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competitor/{id}],methods=[GET]}" onto public ro.db.appl.domain.Competitor ro.db.appl.resource.CompetitorResource.findById(java.lang.Long)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competitor/{start}/{rows}],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Competitor> ro.db.appl.resource.CompetitorResource.findAll(java.lang.Integer,java.lang.Integer)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/competitor],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Competitor> ro.db.appl.resource.CompetitorResource.findAll()
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/race/{id}],methods=[DELETE]}" onto public ro.db.appl.domain.Race ro.db.appl.resource.RaceResource.remove(java.lang.Long)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/race],methods=[PUT]}" onto public ro.db.appl.domain.Race ro.db.appl.resource.RaceResource.update(ro.db.appl.domain.Race)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/race],methods=[POST]}" onto public ro.db.appl.domain.Race ro.db.appl.resource.RaceResource.create(ro.db.appl.domain.Race)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/race/{id}],methods=[GET]}" onto public ro.db.appl.domain.Race ro.db.appl.resource.RaceResource.findById(java.lang.Long)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/race/{start}/{rows}],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Race> ro.db.appl.resource.RaceResource.findAll(java.lang.Integer,java.lang.Integer)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/race],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Race> ro.db.appl.resource.RaceResource.findAll()
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/registration/{id}],methods=[DELETE]}" onto public ro.db.appl.domain.Registration ro.db.appl.resource.RegistrationResource.remove(java.lang.Long)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/registration],methods=[PUT]}" onto public ro.db.appl.domain.Registration ro.db.appl.resource.RegistrationResource.update(ro.db.appl.domain.Registration)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/registration],methods=[POST]}" onto public ro.db.appl.domain.Registration ro.db.appl.resource.RegistrationResource.create(ro.db.appl.domain.Registration)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/registration/{id}],methods=[GET]}" onto public ro.db.appl.domain.Registration ro.db.appl.resource.RegistrationResource.findById(java.lang.Long)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/registration/{start}/{rows}],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Registration> ro.db.appl.resource.RegistrationResource.findAll(java.lang.Integer,java.lang.Integer)
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/registration],methods=[GET]}" onto public java.util.List<ro.db.appl.domain.Registration> ro.db.appl.resource.RegistrationResource.findAll()
+INFO XNIO-1 task-1 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Sun Apr 22 17:14:57 EEST 2018]; parent: Root WebApplicationContext
+INFO XNIO-1 task-1 org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'DispatcherServlet': initialization completed in 681 ms
