@@ -13,6 +13,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { EventsService } from './events/events.service';
 import { ModalComponent } from './modal/modal.component';
 import { ParticipantsComponent } from './participants/participants.component';
+import { ParticipantsService } from './participants/participants.service';
 
 
 const appRoutes: Routes = [
@@ -41,7 +42,7 @@ const appRoutes: Routes = [
   
   ],
   bootstrap: [AppComponent],
-  providers: [HttpClientModule, EventsService],
+  providers: [HttpClientModule, EventsService, ParticipantsService],
   entryComponents: [ModalComponent]
 })
 export class AppModule { }
