@@ -12,12 +12,13 @@ import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { EventsService } from './events/events.service';
 import { ModalComponent } from './modal/modal.component';
+import { ParticipantsComponent } from './participants/participants.component';
 
 
 const appRoutes: Routes = [
   { path: 'events', component: EventsComponent },
-  { path: 'events/:id', component: EventsComponent },
   { path: '', redirectTo: '/events', pathMatch: 'full' },
+  { path: 'participants', component: ParticipantsComponent },
 ];
 
 
@@ -36,6 +37,7 @@ const appRoutes: Routes = [
     SliderComponent,
     FooterComponent,
     ModalComponent,
+    ParticipantsComponent,
   
   ],
   bootstrap: [AppComponent],
