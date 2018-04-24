@@ -1,8 +1,8 @@
 {
   "events": [
-    {      
+    {
       "id": 1,
-      "title": "Bucharest International Half Marathon",
+      "name": "Bucharest International Half Marathon",
       "location": "Bucharest",
       "month": "May",
       "day": "12",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "title": "Table tennis competition",
+      "name": "Table tennis competition",
       "location": "Bucharest",
       "month": "July",
       "day": "4",
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "title": "Fishing competition",
+      "name": "Fishing competition",
       "location": "Bucharest",
       "month": "June",
       "day": "19",
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "title": "Cluj Marathon",
+      "name": "Cluj Marathon",
       "location": "Cluj",
       "month": "May",
       "day": "16",
@@ -34,22 +34,48 @@
     }
   ],
   "participants": [
-    {      
+    {
       "id": 1,
       "firstname": "Maria",
       "lastname": "Dragomiroiu",
       "email": "maria.dragomiroiu@db.com",
+      "gender": "male",
       "competition": "Bucharest Marathon",
-      "race": "Semi marathon"
-     
+      "race": "Semi marathon",
+      "shirt": "M"
     },
-    {      
+    {
       "id": 2,
       "firstname": "Ion",
       "lastname": "Stan",
       "email": "ion.stan@db.com",
+      "gender": "male",
       "competition": "Bucharest Marathon",
-      "race": "Full marathon"
-     
-    }]
+      "race": "Full marathon",
+      "shirt": "L"
+    },
+    {
+      "firstname": "dsvdsvd",
+      "lastname": "vsvsdv",
+      "email": "svsdv",
+      "gender": "Male",
+      "eventId": "1",
+      "id": 3
+    },
+    {
+      "lastname": "vdvdv",
+      "firstname": "dvdvd",
+      "email": "dvdvd",
+      "gender": "Male",
+      "id": 4
+    },
+    {
+      "firstname": "vbsdv",
+      "lastname": "vsdvds",
+      "email": "svv",
+      "gender": "Male",
+      "shirt": "S",
+      "id": 5
+    }
+  ]
 }

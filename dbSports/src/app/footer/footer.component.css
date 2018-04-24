@@ -34,6 +34,8 @@
 	padding-top: 1px;
 	padding-bottom: 16px;
 	margin-bottom: 20px;
+
+	
 }
 .section{
 	display: flex;
@@ -43,6 +45,7 @@
 	padding-left: 52px;
 	display: block;
 	position: relative;
+	
 }
 
 #footer .col-1 li a:after {

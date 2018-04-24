@@ -11,13 +11,13 @@
 						<p class="day">{{events.day}}</p>
 					</div>
 					<div class="info">
-						<h3 class="title">{{events.title}}</h3>
+						<h3 class="name">{{events.name}}</h3>
 						<p class="info-line">
 							<span class="place">{{events.location}}</span>
 						</p>
 						<p>{{events.description}}</p>
 					</div>
-					<button id="register" type="submit" class="button" (click)="openRegisterModal()">Register now!</button>
+					<button id="register" type="submit" class="button" (click)="openRegisterModal(events.id)">Register now!</button>
 				</article>
 
 			</section>
