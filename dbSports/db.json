@@ -1,6 +1,6 @@
 {
   "events": [
-    {      
+    {
       "id": 1,
       "name": "Bucharest International Half Marathon",
       "location": "Bucharest",
@@ -34,22 +34,39 @@
     }
   ],
   "participants": [
-    {      
+    {
       "id": 1,
       "firstname": "Maria",
       "lastname": "Dragomiroiu",
       "email": "maria.dragomiroiu@db.com",
+      "gender": "male",
       "competition": "Bucharest Marathon",
-      "race": "Semi marathon"
-     
+      "race": "Semi marathon",
+      "shirt": "M"
     },
-    {      
+    {
       "id": 2,
       "firstname": "Ion",
       "lastname": "Stan",
       "email": "ion.stan@db.com",
+      "gender": "male",
       "competition": "Bucharest Marathon",
-      "race": "Full marathon"
-     
-    }]
+      "race": "Full marathon",
+      "shirt": "L"
+    },
+    {
+      "firstname": "dsd",
+      "lastname": "fsdfc",
+      "email": "sfcsfs",
+      "gender": "Female",
+      "id": 3
+    },
+    {
+      "firstname": "grgrg",
+      "lastname": "rgrhb",
+      "email": "dhg",
+      "gender": "Female",
+      "id": 4
+    }
+  ]
 }

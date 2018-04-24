@@ -1,29 +1,28 @@
 
 
   <div class="modal__box">
-  <form class="modal__content" ng-submit="onRegister()" #modalForm="ngForm" >
+  <form class="modal__content" (ngSubmit)="onSave()" #modalForm="ngForm" >
+    <div>{{eventsId}}</div>
     <h2 class="title">Register</h2>
-    <div class="inputs__container">
-      <input type="text" class="input" name="firstname" placeholder="First name">
-      <input type="text" class="input" name="lastname" placeholder="Last name">
-      <input type="email" class="input" name="email" placeholder="Email" >
-      <div class="gender">
-      <span>Male</span><input type="radio" class="genderBtn"  name="gender" checked value="male">
-      <span>Female</span><input type="radio" class="genderBtn"  name="gender" value="female">
-      </div>
-      <select>
-        <option> blabla</option>
-        <option> dsgfdf</option>
-        <option> dergredgbdgv</option>
-        </select>
-      
-      
+    <div  class="inputs__container">
+      <input type="text" class="input"  placeholder="First name" [(ngModel)]="participants.firstname" name="firstname">
+      <input type="text" class="input" name="lastname" placeholder="Last name" [(ngModel)]="participants.lastname">
+      <input type="email" class="input" name="email" placeholder="Email" [(ngModel)]="participants.email" >
+      <div class="btn-group" btnRadioGroup name='gender' [(ngModel)]="participants.gender">
+          <label class="btn btn-success" btnRadio="Male" 
+                 tabindex="0" role="button">Male</label>
+          <label class="btn btn-success" btnRadio="Female"
+                 tabindex="0" role="button">Female</label>
+        </div>
     </div>
-    
+   
     <div class="modal__buttons">
       <button type="button" class="button" (click)="bsModalRef.hide()">Cancel</button>
-      <button type="submit" class="button button--pink" >Register</button>
+      <button type="submit" value="submit" class="button button--pink" >Register</button>
     </div>
   </form>
 </div>
+
+        
+        
 

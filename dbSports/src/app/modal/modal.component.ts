@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 
-import { Participants } from '../participants/participants.model';
 import { ParticipantsService } from '../participants/participants.service';
 import { ParticipantsComponent } from '../participants/participants.component';
 import { Events } from '../events/events.model';
 import { EventsService } from '../events/events.service';
+import { Participants } from '../participants/participants.model';
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
@@ -13,24 +13,20 @@ import { EventsService } from '../events/events.service';
 })
 export class ModalComponent {
 
-  events = new Events();
-  isUpdate = false;
-  callbackFunction : () => void;
-  constructor(public bsModalRef: BsModalRef,
-    public eventsService: EventsService) { }
-
-    // onRegister() {
-    //   if (this.isUpdate) {
-    //     this.participantsService.putParticipants(this.participants, this.participants.id).subscribe(response => {
-    //       this.callbackFunction();
-    //       this.bsModalRef.hide();
-    //     });
-    //   } else {
-    //     this.participantsService.postParticipants(this.participants).subscribe(response => {
-    //       this.callbackFunction();
-    //       this.bsModalRef.hide();
-    //     });;
-    //   }
-    }
+  participants = new Participants();
+  eventsId: number;
   
+  constructor(public bsModalRef: BsModalRef,
+    public participantsService: ParticipantsService) { }
 
+    onSave() {
+      // console.log(this.participants)
+      // debugger;
+     this.participantsService.postParticipants(this.participants, this.eventsId).subscribe(response => {
+     
+        this.bsModalRef.hide();
+     })
+    }
+  }
+
+ 
