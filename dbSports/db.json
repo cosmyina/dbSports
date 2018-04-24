@@ -55,27 +55,52 @@
       "shirt": "L"
     },
     {
-      "firstname": "dsvdsvd",
-      "lastname": "vsvsdv",
-      "email": "svsdv",
-      "gender": "Male",
-      "eventId": "1",
+      "firstname": "Cosmina",
+      "lastname": "Isar",
+      "email": "isarc@db.com",
+      "gender": "Female",
+      "shirt": "M",
       "id": 3
     },
     {
-      "lastname": "vdvdv",
-      "firstname": "dvdvd",
-      "email": "dvdvd",
+      "firstname": "fe",
+      "lastname": "ff",
+      "email": "deggr",
       "gender": "Male",
+      "shirt": "S",
       "id": 4
     },
     {
-      "firstname": "vbsdv",
-      "lastname": "vsdvds",
-      "email": "svv",
+      "firstname": "vsv",
+      "lastname": "vsvs",
+      "email": "svsv",
+      "gender": "Male",
+      "shirt": "M",
+      "id": 5
+    },
+    {
+      "firstname": "rdhgd",
+      "lastname": "dhdh",
+      "email": "fhdhdh",
       "gender": "Male",
       "shirt": "S",
-      "id": 5
+      "id": 6
+    },
+    {
+      "firstname": "gsdg",
+      "lastname": "dgdg",
+      "email": "gsdgdg",
+      "gender": "Male",
+      "shirt": "S",
+      "id": 7
+    },
+    {
+      "firstname": "dfdd",
+      "lastname": "dgdgf",
+      "email": "fgvedfge",
+      "gender": "Male",
+      "shirt": "M",
+      "id": 8
     }
   ]
 }

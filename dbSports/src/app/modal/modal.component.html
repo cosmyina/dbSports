@@ -1,5 +1,5 @@
 
-{{eventId}}
+<div>{{eventId}}</div>
   <div class="modal__box">
   <form class="modal__content" (ngSubmit)="onSave()" #modalForm="ngForm" >
    
@@ -10,7 +10,7 @@
       <input type="text" class="input" name="lastname" placeholder="Last name" [(ngModel)]="participants.lastname">
       <input type="email" class="input" name="email" placeholder="Email" [(ngModel)]="participants.email" >
       <label>Gender: 
-      <div class="btn-group" btnRadioGroup name='gender' [(ngModel)]="participants.gender">
+      <div class="btn-group" btnRadioGroup name="gender" [(ngModel)]="participants.gender">
           <label class="btn btn-success" btnRadio="Male" 
                  tabindex="0" role="button">Male</label>
           <label class="btn btn-success" btnRadio="Female"
@@ -18,7 +18,7 @@
         </div>
       </label>
       <label>T-shirt size:
-          <div class="btn-group" btnRadioGroup name='shirt'  [(ngModel)]="participants.shirt">
+          <div class="btn-group" btnRadioGroup name="shirt"  [(ngModel)]="participants.shirt">
               <label class="btn btn-success" btnRadio="S" 
                      tabindex="0" role="button">S</label>
               <label class="btn btn-success" btnRadio="M"
@@ -29,6 +29,7 @@
                      tabindex="0" role="button">XL</label>
             </div>
           </label>
+          <input placeholder={{eventId}} name="eventId" [(ngModel)]="participants.eventId" >
       
     
     </div>

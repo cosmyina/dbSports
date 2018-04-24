@@ -15,7 +15,7 @@ import { ModalComponent } from './modal/modal.component';
 import { ParticipantsComponent } from './participants/participants.component';
 import { ParticipantsService } from './participants/participants.service';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
-
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 const appRoutes: Routes = [
   { path: 'events', component: EventsComponent },
   { path: '', redirectTo: '/events', pathMatch: 'full' },
@@ -30,7 +30,8 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
     ModalModule.forRoot(),
-    ButtonsModule.forRoot()
+    ButtonsModule.forRoot(),
+    CarouselModule.forRoot()
    ],
    declarations: [
     AppComponent, 
