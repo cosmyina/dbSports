@@ -9,10 +9,14 @@
 
     clear: both;
 	overflow: hidden;
-	padding: 40px 0 0 0;
+	padding: 40px 250px 100px 250px;
 	font-size: 14px;
 	color: #fff;
 	line-height: 20px;
     
+}
+.carousel-inner{
+	height: 400px;
+	width: 1200px;
 }
 
