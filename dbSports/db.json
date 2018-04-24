@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "title": "Fishing competition",
+      "name": "Fishing competition",
       "location": "Bucharest",
       "month": "June",
       "day": "19",
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "title": "Cluj Marathon",
+      "name": "Cluj Marathon",
       "location": "Cluj",
       "month": "May",
       "day": "16",
@@ -55,18 +55,27 @@
       "shirt": "L"
     },
     {
-      "firstname": "dsd",
-      "lastname": "fsdfc",
-      "email": "sfcsfs",
-      "gender": "Female",
+      "firstname": "dsvdsvd",
+      "lastname": "vsvsdv",
+      "email": "svsdv",
+      "gender": "Male",
+      "eventId": "1",
       "id": 3
     },
     {
-      "firstname": "grgrg",
-      "lastname": "rgrhb",
-      "email": "dhg",
-      "gender": "Female",
+      "lastname": "vdvdv",
+      "firstname": "dvdvd",
+      "email": "dvdvd",
+      "gender": "Male",
       "id": 4
+    },
+    {
+      "firstname": "vbsdv",
+      "lastname": "vsdvds",
+      "email": "svv",
+      "gender": "Male",
+      "shirt": "S",
+      "id": 5
     }
   ]
 }

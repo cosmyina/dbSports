@@ -1,19 +1,36 @@
 
-
+{{eventId}}
   <div class="modal__box">
   <form class="modal__content" (ngSubmit)="onSave()" #modalForm="ngForm" >
-    <div>{{eventsId}}</div>
+   
+    
     <h2 class="title">Register</h2>
     <div  class="inputs__container">
       <input type="text" class="input"  placeholder="First name" [(ngModel)]="participants.firstname" name="firstname">
       <input type="text" class="input" name="lastname" placeholder="Last name" [(ngModel)]="participants.lastname">
       <input type="email" class="input" name="email" placeholder="Email" [(ngModel)]="participants.email" >
+      <label>Gender: 
       <div class="btn-group" btnRadioGroup name='gender' [(ngModel)]="participants.gender">
           <label class="btn btn-success" btnRadio="Male" 
                  tabindex="0" role="button">Male</label>
           <label class="btn btn-success" btnRadio="Female"
                  tabindex="0" role="button">Female</label>
         </div>
+      </label>
+      <label>T-shirt size:
+          <div class="btn-group" btnRadioGroup name='shirt'  [(ngModel)]="participants.shirt">
+              <label class="btn btn-success" btnRadio="S" 
+                     tabindex="0" role="button">S</label>
+              <label class="btn btn-success" btnRadio="M"
+                     tabindex="0" role="button">M</label>
+                     <label class="btn btn-success" btnRadio="L"
+                     tabindex="0" role="button">L</label>
+                     <label class="btn btn-success" btnRadio="XL"
+                     tabindex="0" role="button">XL</label>
+            </div>
+          </label>
+      
+    
     </div>
    
     <div class="modal__buttons">

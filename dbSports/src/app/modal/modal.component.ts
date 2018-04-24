@@ -20,8 +20,7 @@ export class ModalComponent {
     public participantsService: ParticipantsService) { }
 
     onSave() {
-      // console.log(this.participants)
-      // debugger;
+      
      this.participantsService.postParticipants(this.participants, this.eventsId).subscribe(response => {
      
         this.bsModalRef.hide();

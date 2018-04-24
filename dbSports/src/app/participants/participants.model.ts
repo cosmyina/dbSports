@@ -6,4 +6,5 @@ export class Participants {
     competition: string;
     race: string;
     gender: string;
+    eventId: number;
   }
