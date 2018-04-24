@@ -1,9 +1,14 @@
 export class Events {
     id: number;
-    title: string;
-    location: string;
+    name: string;
+    place: string;
     month: string;
     day: number;
     description: string;
+    category: Category;
    
   }
+export class Category{
+  id: number;
+  name: string;
+}
