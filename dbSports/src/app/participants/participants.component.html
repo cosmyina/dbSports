@@ -1,0 +1,40 @@
+<div class="container-table100">
+  <div class="wrap-table100">
+<div class="table100 ver1 m-b-110">
+  <div class="table100-head">
+    <table>
+      <thead>
+        <tr class="row100 head">
+          <th class="cell100 column1">First Name</th>
+          <th class="cell100 column2">Last name</th>
+          <th class="cell100 column3">Email</th>
+          <th class="cell100 column4">Competition</th>
+          <th class="cell100 column5">Race</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+
+  <div class="table100-body js-pscroll">
+    <table>
+      <tbody>
+        <tr class="row100 body" *ngFor="let participants of participantsList">
+          <td class="cell100 column1">{{participants.firstname}}</td>
+          <td class="cell100 column2">{{participants.lastname}}</td>
+          <td class="cell100 column3">{{participants.email}}</td>
+          <td class="cell100 column4">{{participants.competition}}</td>
+          <td class="cell100 column5">{{participants.race}}</td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+</div>
+<!-- <article *ngFor="let participants of participantsList">
+
+
+  <p>{{participants.firstname}}</p>
+</article> -->

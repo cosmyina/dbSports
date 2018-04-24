@@ -19,16 +19,18 @@ import { BsModalService } from 'ngx-bootstrap/modal/bs-modal.service';
    constructor(private eventsService: EventsService,
     private modalService: BsModalService
     ){
-     
+
    }
    ngOnInit(){
      this.getEvents();
    }
+
    getEvents(){
      this.eventsService.getEvents().subscribe((response) => {
        this.eventsList = response;
      })
    }
+
    openRegisterModal() {
     const initialState = { callbackFunction: this.getEvents.bind(this) };
     this.bsModalRef = this.modalService.show(ModalComponent, { initialState });
