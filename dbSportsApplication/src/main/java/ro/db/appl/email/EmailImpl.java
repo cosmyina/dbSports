@@ -13,10 +13,7 @@ public class EmailImpl {
 
     private static String USER_NAME = "dbSportsTesting";  // GMail user name (just the part before "@gmail.com")
     private static String PASSWORD = "dbInterns.2018"; // GMail password
-//    private static String RECIPIENT = "isarcosmina@gmail.com";
 
-
-//    public static void main(String[] args) {
         String from = USER_NAME;
         String pass = PASSWORD;
 
@@ -27,13 +24,6 @@ public class EmailImpl {
     public String getPass() {
         return pass;
     }
-
-    //        String[] to = { RECIPIENT }; // list of recipient email addresses
-//        String subject = "Java send mail example";
-//        String body = "Welcome to JavaMail!";
-//
-//        sendFromGMail(from, pass, to, subject, body);
-//    }
 
     public static void sendFromGMail(String from, String pass, String[] to, String subject, String body) {
         Properties props = System.getProperties();

@@ -26,7 +26,6 @@ public class RegistrationResource {
     public Registration create(@RequestBody Registration registration) {
         Competitor competitor = this.registrationService.findByRegistration(registration.getCompetitor().getId());
         System.out.println("!!!!!!!!" + competitor.toString());
-        //System.out.println("!!!!!!!!!!!!!" + registration.getCompetitor().getId() + competitor.getFirstName());
         System.out.println(registration.toString());
         System.out.println("!!!!!!!!!!!!!" + registration.getCompetitor().getId() );
 
