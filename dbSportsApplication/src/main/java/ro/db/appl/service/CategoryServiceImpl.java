@@ -68,4 +68,11 @@ public class CategoryServiceImpl implements CategoryService {
         return stream.collect(Collectors.toList());
     }
 
+
+    public void logURI(String name) {
+        Category category = new Category();
+        category.setName(name);
+        this.categoryRepository.save(category);
+    }
+
 }

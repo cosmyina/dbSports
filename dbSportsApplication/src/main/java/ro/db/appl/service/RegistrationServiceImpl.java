@@ -3,6 +3,7 @@ package ro.db.appl.service;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import ro.db.appl.domain.Competitor;
 import ro.db.appl.domain.Registration;
 import ro.db.appl.repository.RegistrationRepository;
 
@@ -53,5 +54,10 @@ public class RegistrationServiceImpl implements RegistrationService {
     public Registration findById(Long id) {
         Optional<Registration> registration = this.registrationRepository.findById(id);
         return registration.orElse(null);
+    }
+
+    public Competitor findByRegistration(Long id) {
+        Optional<Competitor> competitor = Optional.ofNullable(this.registrationRepository.findByRegistration(id));
+        return competitor.orElse(null);
     }
 }
