@@ -20,13 +20,16 @@ export class ModalComponent {
   constructor(public bsModalRef: BsModalRef,
     public participantsService: ParticipantsService) { }
 
-    onSave(eventId, eventName) {
-     this.participants.eventId= eventId;
-     this.participants.eventName = eventName;
-     this.participantsService.postParticipants(this.participants).subscribe(response => {
-      debugger;
+    onSave(form) {
+    
+     this.participants.eventId= this.eventId;
+     debugger;
+     if(form.valid){ 
+       this.participantsService.postParticipants(this.participants).subscribe(response => {
         this.bsModalRef.hide();
      })
+     }
+
     }
     
   }
