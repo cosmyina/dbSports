@@ -14,16 +14,15 @@ import { Participants } from '../participants/participants.model';
 })
 export class ModalComponent {
 
-  participants = new Participants;
+  participants = new Participants();
   eventId: number;
-  eventName: string;
   
   constructor(public bsModalRef: BsModalRef,
     public participantsService: ParticipantsService) { }
 
     onSave(eventId, eventName) {
-     this.participants.eventId =eventId;
-     this.participants.eventName =eventName;
+     this.participants.eventId= eventId;
+     this.participants.eventName = eventName;
      this.participantsService.postParticipants(this.participants).subscribe(response => {
       debugger;
         this.bsModalRef.hide();

@@ -1,10 +1,10 @@
 
 <div>{{eventId}}{{eventName}}</div>
   <div class="modal__box">
-  <form class="modal__content" (ngSubmit)="onSave(eventId, eventName)" #modalForm="ngForm" >
+  <form class="modal__content" (ngSubmit)="onSave(eventId)" #modalForm="ngForm" >
    
     
-    <h2 class="title">Register to {{eventName}}, event ID: {{eventId}}</h2>
+    <h2 class="title">Register</h2>
     <div  class="inputs__container">
       <input type="text" class="input"  placeholder="First name" [(ngModel)]="participants.firstname" name="firstname" required>
       <input type="text" class="input" name="lastname" placeholder="Last name" [(ngModel)]="participants.lastname"  required>

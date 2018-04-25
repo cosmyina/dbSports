@@ -22,7 +22,7 @@ export class AdminComponent {
       }
   }
 }
-export class EditComponent {
+export class PrivateComponent {
  
   constructor(
       private _service:AdminService){}

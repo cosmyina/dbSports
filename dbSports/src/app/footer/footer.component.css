@@ -62,12 +62,14 @@
 	padding-bottom: 21px;
 	margin-bottom: 25px;
 	width: 30px;
+	text-align: center;
 }
 
 #footer .col-1 .mail a:after {
 	background: url(/assets/images/ico_contacts.png) no-repeat 0 -32px;
 	height: 22px;
 	top: -1px;
+	width:50px;
 }
 
 #footer .col-1 .phone a:after {

@@ -33,8 +33,12 @@ import { BsModalService } from 'ngx-bootstrap/modal/bs-modal.service';
    }
 
    openRegisterModal(eventId, eventName) {
-    const initialState = { eventName, eventId };
+    const initialState = { eventId, eventName };
     this.bsModalRef = this.modalService.show(ModalComponent, { initialState });
   }
-  
+  // getEventId(){
+  //     const initialState = { events: Object.assign({}, events, callbackFunction: this. getEventId.bind(this), isUpdate: true};
+  //     this.bsModalRef = this.modalService.show(ModalComponent, {initialState});
+
+  // }
   }

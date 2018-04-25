@@ -1,6 +1,6 @@
 .slider{
 	position: center;
-    margin: 0 auto;
+    margin: 0 0 40px 0;
     clear: both;
 	overflow: hidden;
 	font-size: 14px;
@@ -9,4 +9,5 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
+
 }
