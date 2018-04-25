@@ -1,0 +1,38 @@
+.add__container{
+	margin-top:10px;
+	width: 1200px;
+}
+
+.imagine{
+	display: flex;
+	justify-content: center;
+	width:1200px;
+	margin:auto;
+	height: 400px;
+}
+
+#carousel__container{
+    position: center;
+    margin: 0 0 40px 0;
+    clear: both;
+	overflow: hidden;
+	font-size: 14px;
+	color: #fff;
+	line-height: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+}
+.carousel-inner{
+<<<<<<< HEAD
+	height: 400px;
+	width: 1500px;
+	justify-content: center;
+	background-color: lightblue;
+=======
+	height: 370px;
+	width: 1200px;
+>>>>>>> 528b785742a3a2c24f355d5bf8c532f84fc498fc
+}
+

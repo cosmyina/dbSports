@@ -14,8 +14,8 @@ export class ParticipantsService {
     return this.http.get('http://localhost:3000/participants') as Observable<Participants[]>;
   }
 
-  postParticipants(participants :Participants): Observable<Participants> {
-    return this.http.post('http://localhost:3000/participants', participants) as Observable<Participants>;
+  postParticipants(participants :Participants, eventId: number): Observable<Participants> {
+    return this.http.post('http://localhost:3000/participants/', participants) as Observable<Participants>;
   }
 
   putParticipants(participants: Participants, id: number): Observable<Participants> {
@@ -25,7 +25,7 @@ export class ParticipantsService {
   deleteParticipants(id: number): Observable<Participants> {
     return this.http.delete(`http://localhost:3000/participants/${id}`) as Observable<Participants>;
   }
-
-
+  // eventId: number
+  // ${eventId}
 }
 

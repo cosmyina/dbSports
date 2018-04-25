@@ -1,26 +1,77 @@
-<div class="modal__box">
-  <form class="modal__content" (ngSubmit)="onSave()" #modalForm="ngForm">
+
+<div>{{eventId}}</div>
+  <div class="modal__box">
+  <form class="modal__content" (ngSubmit)="onSave()" #modalForm="ngForm" >
+   
+    
     <h2 class="title">Register</h2>
+<<<<<<< HEAD
+    <select *ngFor="let events">
+        <option> "{{events.name}}"</option>
+    </select>
+
     <div class="inputs__container">
       <input type="text" class="input" name="firstname" placeholder="First name">
       <input type="text" class="input" name="lastname" placeholder="Last name">
       <input type="email" class="input" name="email" placeholder="Email" >
       <div class="gender">
+        <p>Gender: </p>
       <span>Male</span><input type="radio" class="genderBtn"  name="gender" checked value="male">
       <span>Female</span><input type="radio" class="genderBtn"  name="gender" value="female">
       </div>
-      <select>
-        <option> "{{events.race1}}"</option>
-        <option> "{{events.race2}}"</option>
-        <option> "{{events.race3}}"</option>
-        </select>
+      <div class="tShirt">
+        <p>T-Shirt size:</p>
+        <span>XS</span><input type="radio" class="tshirtBtn"  name="tshirt" checked value="XS">
+        <span>S</span><input type="radio" class="tshirtBtn"  name="tshirt" value="S">
+        <span>M</span><input type="radio" class="tshirtBtn"  name="tshirt" value="M">
+        <span>L</span><input type="radio" class="tshirtBtn"  name="tshirt" value="L">
+        <span>XL</span><input type="radio" class="tshirtBtn"  name="tshirt" value="XL">
+      </div>
       
-      
+
     </div>
+=======
+    <div  class="inputs__container">
+      <input type="text" class="input"  placeholder="First name" [(ngModel)]="participants.firstname" name="firstname">
+      <input type="text" class="input" name="lastname" placeholder="Last name" [(ngModel)]="participants.lastname">
+      <input type="email" class="input" name="email" placeholder="Email" [(ngModel)]="participants.email" >
+      <label>Gender: 
+      <div class="btn-group" btnRadioGroup name="gender" [(ngModel)]="participants.gender">
+          <label class="btn btn-success" btnRadio="Male" 
+                 tabindex="0" role="button">Male</label>
+          <label class="btn btn-success" btnRadio="Female"
+                 tabindex="0" role="button">Female</label>
+        </div>
+      </label>
+      <label>T-shirt size:
+          <div class="btn-group" btnRadioGroup name="shirt"  [(ngModel)]="participants.shirt">
+              <label class="btn btn-success" btnRadio="S" 
+                     tabindex="0" role="button">S</label>
+              <label class="btn btn-success" btnRadio="M"
+                     tabindex="0" role="button">M</label>
+                     <label class="btn btn-success" btnRadio="L"
+                     tabindex="0" role="button">L</label>
+                     <label class="btn btn-success" btnRadio="XL"
+                     tabindex="0" role="button">XL</label>
+            </div>
+          </label>
+          <input placeholder={{eventId}} name="eventId" [(ngModel)]="participants.eventId" >
+      
+>>>>>>> 528b785742a3a2c24f355d5bf8c532f84fc498fc
     
+    </div>
+   
     <div class="modal__buttons">
       <button type="button" class="button" (click)="bsModalRef.hide()">Cancel</button>
-      <button type="submit" class="button button--pink">Register</button>
+      <button type="submit" value="submit" class="button button--pink" >Register</button>
     </div>
   </form>
+<<<<<<< HEAD
 </div>
+=======
+</div>
+
+        
+        
+
+>>>>>>> 528b785742a3a2c24f355d5bf8c532f84fc498fc
