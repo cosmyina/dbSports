@@ -18,4 +18,6 @@ public interface CategoryService {
 
     List<Competition> findByCategory(String name);
 
+    void logURI(String name);
+
 }
