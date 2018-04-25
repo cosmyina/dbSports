@@ -11,8 +11,8 @@ import java.util.Properties;
 
 public class EmailImpl {
 
-    private static String USER_NAME = "zuzelina001";  // GMail user name (just the part before "@gmail.com")
-    private static String PASSWORD = "sisterelenr1"; // GMail password
+    private static String USER_NAME = "dbSportsTesting";  // GMail user name (just the part before "@gmail.com")
+    private static String PASSWORD = "dbInterns.2018"; // GMail password
 //    private static String RECIPIENT = "isarcosmina@gmail.com";
 
 
