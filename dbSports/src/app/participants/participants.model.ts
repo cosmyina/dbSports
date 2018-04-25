@@ -4,6 +4,7 @@ export class Participants {
     lastname: string;
     email: string;
     gender: string;
+    shirt: string;
     eventId: number;
     eventName: string;
   }

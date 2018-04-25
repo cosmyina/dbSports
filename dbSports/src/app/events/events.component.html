@@ -13,19 +13,15 @@
 						<p class="day">{{events.day}}</p>
 					</div>
 					<div class="info">
-<<<<<<< HEAD
-						<h3 class="title">{{events.name}}</h3>
-=======
 						<h3 class="name">{{events.name}}</h3>
->>>>>>> 5f56501a8faa1362470650f98b0b1e16cd1e5f16
 						<p class="info-line">
-							<span class="place">{{events.place}}</span>
-							<span class="place">{{events.category.name}}</span>
+							<span class="place">{{events.location}}</span>
+							<span class="place">{{events.id}}</span>
 						</p>
 						<p>{{events.description}}</p>
 					</div>
-					<button type="submit" class="button" (click)="openRegisterModal(events.id)">Register now!</button>
-					<!-- <button id="register" type="submit" class="button" (click)="openRegisterModal(events.id)">Register now!</button> -->
+					<button type="submit" class="button" (click)="openRegisterModal(events.id, events.name)">Register now!</button>
+					
 				</article>
 
 			</section>

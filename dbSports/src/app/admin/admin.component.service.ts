@@ -30,7 +30,7 @@ export class AdminService {
     var authenticatedUser = users.find(admin => admin.username === user.username);
     debugger;
     if (authenticatedUser && authenticatedUser.password === user.password){
-   //   localStorage.setItem("user", authenticatedUser);
+    //  localStorage.setItem("user", authenticatedUser);
       this.router.navigate(['/admin/edit']);    
       return true;
     }

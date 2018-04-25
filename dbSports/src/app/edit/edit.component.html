@@ -1,7 +1,7 @@
-
+<button type="button" >Add Event</button>
 <div class="content">
 	<div class="container">
-    <button type="button" (click)="openAddEvent()">Add Event</button>
+  
 		<div class="main-content">
 			<h1>Upcoming events</h1>
 			<section class="posts-con">
@@ -38,7 +38,8 @@
             <th class="cell100 column1">First Name</th>
             <th class="cell100 column2">Last name</th>
             <th class="cell100 column3">Email</th>
-            <th class="cell100 column4">Competition</th>
+            <th class="cell100 column4">Event ID</th>
+            <th class="cell100 column5">Edit</th>
           </tr>
         </thead>
       </table>
@@ -51,7 +52,9 @@
             <td class="cell100 column1">{{participants.firstname}}</td>
             <td class="cell100 column2">{{participants.lastname}}</td>
             <td class="cell100 column3">{{participants.email}}</td>
-            <td class="cell100 column4">{{participants.competition}}</td>
+            <td class="cell100 column4">{{participants.eventId}}</td>
+            <td class="cell100 column5">Edit</td>
+            
           </tr>
   
           

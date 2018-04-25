@@ -1,10 +1,10 @@
 
 <div>{{eventId}}{{eventName}}</div>
   <div class="modal__box">
-  <form class="modal__content" (ngSubmit)="onSave(eventId)" #modalForm="ngForm" >
+  <form class="modal__content" (ngSubmit)="onSave(eventId, eventName)" #modalForm="ngForm" >
    
     
-    <h2 class="title">Register</h2>
+    <h2 class="title">Register to {{eventName}}, event ID: {{eventId}}</h2>
     <div  class="inputs__container">
       <input type="text" class="input"  placeholder="First name" [(ngModel)]="participants.firstname" name="firstname" required>
       <input type="text" class="input" name="lastname" placeholder="Last name" [(ngModel)]="participants.lastname"  required>
@@ -30,15 +30,10 @@
                      tabindex="0" role="button">XL</label>
             </div>
           </label>
-<<<<<<< HEAD
-      
-    
-=======
         </div>
           
         
   
->>>>>>> 2a911c9d13f312de6f702baca9a2a1f8b8c4c86e
     </div>
    
     <div class="modal__buttons">
