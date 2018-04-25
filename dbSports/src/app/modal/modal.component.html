@@ -1,24 +1,25 @@
 
-{{eventId}}
+<div>{{eventId}}{{eventName}}</div>
   <div class="modal__box">
-  <form class="modal__content" (ngSubmit)="onSave()" #modalForm="ngForm" >
+  <form class="modal__content" (ngSubmit)="onSave(eventId)" #modalForm="ngForm" >
    
     
     <h2 class="title">Register</h2>
     <div  class="inputs__container">
-      <input type="text" class="input"  placeholder="First name" [(ngModel)]="participants.firstname" name="firstname">
-      <input type="text" class="input" name="lastname" placeholder="Last name" [(ngModel)]="participants.lastname">
-      <input type="email" class="input" name="email" placeholder="Email" [(ngModel)]="participants.email" >
+      <input type="text" class="input"  placeholder="First name" [(ngModel)]="participants.firstname" name="firstname" required>
+      <input type="text" class="input" name="lastname" placeholder="Last name" [(ngModel)]="participants.lastname"  required>
+      <input type="email" class="input" name="email" placeholder="firstname.lastname@gmail.com" [(ngModel)]="participants.email" required >
       <label>Gender: 
-      <div class="btn-group" btnRadioGroup name='gender' [(ngModel)]="participants.gender">
+      <div class="btn-group" btnRadioGroup name="gender" [(ngModel)]="participants.gender">
           <label class="btn btn-success" btnRadio="Male" 
                  tabindex="0" role="button">Male</label>
           <label class="btn btn-success" btnRadio="Female"
                  tabindex="0" role="button">Female</label>
         </div>
       </label>
+      <div class="shirts__div">
       <label>T-shirt size:
-          <div class="btn-group" btnRadioGroup name='shirt'  [(ngModel)]="participants.shirt">
+          <div class="btn-group" btnRadioGroup name="shirt"  [(ngModel)]="participants.shirt">
               <label class="btn btn-success" btnRadio="S" 
                      tabindex="0" role="button">S</label>
               <label class="btn btn-success" btnRadio="M"
@@ -29,13 +30,21 @@
                      tabindex="0" role="button">XL</label>
             </div>
           </label>
+<<<<<<< HEAD
       
     
+=======
+        </div>
+          
+        
+  
+>>>>>>> 2a911c9d13f312de6f702baca9a2a1f8b8c4c86e
     </div>
    
     <div class="modal__buttons">
-      <button type="button" class="button" (click)="bsModalRef.hide()">Cancel</button>
-      <button type="submit" value="submit" class="button button--pink" >Register</button>
+        <button type="button" (click)="bsModalRef.hide()" class="grayBtn">Cancel</button>
+        <button type="submit" class="button">Register</button>
+    
     </div>
   </form>
 </div>

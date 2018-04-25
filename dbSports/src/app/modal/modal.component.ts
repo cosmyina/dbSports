@@ -6,6 +6,7 @@ import { ParticipantsComponent } from '../participants/participants.component';
 import { Events } from '../events/events.model';
 import { EventsService } from '../events/events.service';
 import { Participants } from '../participants/participants.model';
+
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
@@ -14,18 +15,20 @@ import { Participants } from '../participants/participants.model';
 export class ModalComponent {
 
   participants = new Participants();
-  eventsId: number;
+  eventId: number;
   
   constructor(public bsModalRef: BsModalRef,
     public participantsService: ParticipantsService) { }
 
-    onSave() {
-      
-     this.participantsService.postParticipants(this.participants, this.eventsId).subscribe(response => {
-     
+    onSave(eventId, eventName) {
+     this.participants.eventId= eventId;
+     this.participants.eventName = eventName;
+     this.participantsService.postParticipants(this.participants).subscribe(response => {
+      debugger;
         this.bsModalRef.hide();
      })
     }
+    
   }
 
  

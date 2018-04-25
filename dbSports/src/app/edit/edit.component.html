@@ -1,5 +1,29 @@
-<app-header></app-header>
 
+<div class="content">
+	<div class="container">
+    <button type="button" (click)="openAddEvent()">Add Event</button>
+		<div class="main-content">
+			<h1>Upcoming events</h1>
+			<section class="posts-con">
+				<article *ngFor="let events of eventsList">
+					<div class="current-date">
+						<p class="month">{{events.month}}</p>
+						<p class="day">{{events.day}}</p>
+					</div>
+					<div class="info">
+						<h3 class="name">{{events.name}}</h3>
+						<p class="info-line">
+							<span class="place">{{events.location}}</span>
+						</p>
+						<p>{{events.description}}</p>
+					</div>
+				
+				</article>
+
+			</section>
+		</div>
+	</div>
+</div>
 <div class="participants__container">
 
    
@@ -27,7 +51,7 @@
             <td class="cell100 column1">{{participants.firstname}}</td>
             <td class="cell100 column2">{{participants.lastname}}</td>
             <td class="cell100 column3">{{participants.email}}</td>
-            <td class="cell100 column4">{{participants.eventId}}</td>
+            <td class="cell100 column4">{{participants.competition}}</td>
           </tr>
   
           
@@ -57,12 +81,3 @@
   </div>
 </div>
 </div>
-
-
-  
-<app-footer></app-footer>
-
-  
-
-  
-  

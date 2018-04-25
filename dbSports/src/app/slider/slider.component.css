@@ -1,12 +1,34 @@
+<<<<<<< HEAD
 .slider{
 	position: center;
+=======
+.add__container{
+    margin-top:10px;
+}
+#carousel__container{
+    position: 0 auto;
+	left: 0;
+	right: 0;
+>>>>>>> 2a911c9d13f312de6f702baca9a2a1f8b8c4c86e
     margin: 0 0 40px 0;
+
     clear: both;
 	overflow: hidden;
+	padding: 40px 250px 100px 250px;
 	font-size: 14px;
 	color: #fff;
 	line-height: 20px;
+<<<<<<< HEAD
 	width: 100%;
 	display: flex;
 	justify-content: center;
 }
+=======
+    
+}
+.carousel-inner{
+	height: 370px;
+	width: 1200px;
+}
+
+>>>>>>> 2a911c9d13f312de6f702baca9a2a1f8b8c4c86e

@@ -3,8 +3,7 @@ export class Participants {
     firstname: string;
     lastname: string;
     email: string;
-    competition: string;
-    race: string;
     gender: string;
     eventId: number;
+    eventName: string;
   }
