@@ -1,7 +1,12 @@
 .content {
 	padding-bottom: 10px;
 }
-
+.upcoming{
+	font-family: 'Cardo', serif;
+	margin: 50px 50px;
+	text-align: center;
+	font-size: 40px;
+  }
 .main-content {
 	margin: 0 auto;
 	width: 80%;
