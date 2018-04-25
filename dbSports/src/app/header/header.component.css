@@ -43,3 +43,8 @@
     text-decoration: none;
     color:#1e1e1e;
 }
+
+.nav__link:hover {
+    text-decoration: none;
+    color:#3c5177;
+}
