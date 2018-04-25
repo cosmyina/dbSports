@@ -9,7 +9,12 @@
 }
 
 
+.descriere{
+  font-family: 'Cardo', serif;
+  font-size:16px;
+  text-align: justify;
 
+}
 
 .posts-con article {
 	border-bottom: 1px solid #d8dbe1;
@@ -39,7 +44,8 @@
 .posts-con .info-line {
 	font-size: 16px;
 	line-height: 20px;
-	padding-bottom: 20px;
+  padding-bottom: 20px;
+  
 }
 
 .posts-con .info-line .time {
@@ -51,7 +57,8 @@
 .posts-con .info-line .place {
 	padding: 0 20px 0 25px;
 	background: url() no-repeat 0 3px;
-	display: inline-block;
+  display: inline-block;
+  font-size:20px;
 }
 
 .events {
@@ -63,7 +70,8 @@
 	float: left;
 	padding: 0 15px;
 	font-size: 14px;
-	line-height: 20px;
+  line-height: 20px;
+  font-family: 'Cardo', serif;
 }
 
 .current-date {
@@ -107,6 +115,7 @@
     text-decoration: none;
     font-size: 1.45em;
     margin: 0 15px;
+    
   }
   
   /* Hover state animation applied here */

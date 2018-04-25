@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { EventsComponent } from './events/events.component';
 
-import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { SliderComponent } from './slider/slider.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -28,7 +27,6 @@ const appRoutes: Routes = [
   { path: 'admin/edit', component: EditComponent }
 
 ];
-
 
 @NgModule({
   imports: [
