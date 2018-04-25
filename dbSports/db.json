@@ -1,22 +1,6 @@
 {
   "events": [
     {
-      "id": 1,
-      "name": "Bucharest International Half Marathon",
-      "location": "Bucharest",
-      "month": "May",
-      "day": "12",
-      "description": "The Bucharest International Marathon is an annual marathon and sport event hosted by the city of Bucharest, Romania since 2008. It held at the beginning of October."
-    },
-    {
-      "id": 2,
-      "name": "Table tennis competition",
-      "location": "Bucharest",
-      "month": "July",
-      "day": "4",
-      "description": "The World Table Tennis Championships have been held since 1926, biennially since 1957. Five individual events, which include men's singles, women's singles, men's doubles, women's double and mixed doubles, are currently held in odd numbered years. The World Team Table Tennis Championships, which include men's team and women's team events, were first their own competition in 2000. The Team Championships are held in even numbered years."
-    },
-    {
       "id": 3,
       "name": "Fishing competition",
       "location": "Bucharest",
@@ -31,6 +15,14 @@
       "month": "May",
       "day": "16",
       "description": "Wizz Air Cluj-Napoca is a running event that reunites in an open competition professional and amateur runners, from Romania and abroad, in a major event that promotes among the public at large a healthy lifestyle, through the practice of running. The event comprises various races and is designed for everybody, in line with the international standards: 42,195 km, 21,0975 km, 10,55 km, 5 km , kids’ race. With a growing reputation and popularity year by year, the event is envisioned to become a brand of the city of Cluj-Napoca as well as a well known and attractive race in Europe."
+    },
+    {
+      "name": "Football",
+      "location": "Bucharest",
+      "day": 12,
+      "month": "May",
+      "description": "Football event",
+      "id": 5
     }
   ],
   "participants": [
@@ -43,156 +35,6 @@
       "competition": "Bucharest Marathon",
       "race": "Semi marathon",
       "shirt": "M"
-    },
-    {
-      "id": 2,
-      "firstname": "Ion",
-      "lastname": "Stan",
-      "email": "ion.stan@db.com",
-      "gender": "male",
-      "competition": "Bucharest Marathon",
-      "race": "Full marathon",
-      "shirt": "L"
-    },
-    {
-      "firstname": "Cosmina",
-      "lastname": "Isar",
-      "email": "isarc@db.com",
-      "gender": "Female",
-      "shirt": "M",
-      "id": 3
-    },
-    {
-      "firstname": "fe",
-      "lastname": "ff",
-      "email": "deggr",
-      "gender": "Male",
-      "shirt": "S",
-      "id": 4
-    },
-    {
-      "firstname": "vsv",
-      "lastname": "vsvs",
-      "email": "svsv",
-      "gender": "Male",
-      "shirt": "M",
-      "id": 5
-    },
-    {
-      "firstname": "rdhgd",
-      "lastname": "dhdh",
-      "email": "fhdhdh",
-      "gender": "Male",
-      "shirt": "S",
-      "id": 6
-    },
-    {
-      "firstname": "gsdg",
-      "lastname": "dgdg",
-      "email": "gsdgdg",
-      "gender": "Male",
-      "shirt": "S",
-      "id": 7
-    },
-    {
-      "firstname": "dfdd",
-      "lastname": "dgdgf",
-      "email": "fgvedfge",
-      "gender": "Male",
-      "shirt": "M",
-      "id": 8
-    },
-    {
-      "firstname": "vsvs",
-      "lastname": "sdfcs",
-      "email": "svsv",
-      "gender": "Male",
-      "shirt": "M",
-      "id": 9
-    },
-    {
-      "id": 10
-    },
-    {
-      "id": 11
-    },
-    {
-      "firstname": "verve",
-      "lastname": "evev",
-      "email": "evev",
-      "gender": "Male",
-      "shirt": "M",
-      "id": 12
-    },
-    {
-      "firstname": "vfevev",
-      "lastname": "vevv",
-      "email": "veevev",
-      "shirt": "S",
-      "id": 13
-    },
-    {
-      "firstname": "edve",
-      "lastname": "vevv",
-      "email": "evevg",
-      "gender": "Male",
-      "shirt": "S",
-      "eventId": 1,
-      "id": 14
-    },
-    {
-      "firstname": "gaga",
-      "lastname": "gugu",
-      "email": "efefe",
-      "gender": "Female",
-      "shirt": "M",
-      "eventId": 1,
-      "id": 15
-    },
-    {
-      "firstname": "fewff",
-      "lastname": "fewf",
-      "email": "efwefw",
-      "gender": "Female",
-      "shirt": "XL",
-      "eventId": 1,
-      "id": 16
-    },
-    {
-      "lastname": "gfvbf",
-      "firstname": "fb",
-      "email": "bf",
-      "gender": "Female",
-      "shirt": "L",
-      "eventId": 4,
-      "id": 17
-    },
-    {
-      "firstname": "axasd",
-      "lastname": "asdasd",
-      "email": "asdasd",
-      "gender": "Male",
-      "shirt": "S",
-      "eventId": 1,
-      "id": 18
-    },
-    {
-      "firstname": "asd",
-      "lastname": "sada",
-      "email": "asdas",
-      "gender": "Male",
-      "shirt": "S",
-      "eventId": 1,
-      "id": 19
-    },
-    {
-      "firstname": "ss",
-      "lastname": "ss",
-      "email": "ss",
-      "gender": "Male",
-      "shirt": "M",
-      "eventId": 4,
-      "id": 20
     }
   ]
 }

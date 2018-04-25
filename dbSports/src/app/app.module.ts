@@ -19,6 +19,12 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { AdminComponent } from './admin/admin.component';
 import { EditComponent } from './edit/edit.component';
 import { AdminService } from './admin/admin.component.service';
+import { EditService } from './edit/edit.service';
+import { ModalEventComponent } from './modal-event/modal-event.component';
+
+
+
+
 const appRoutes: Routes = [
   { path: 'events',  component: EventsComponent },
   { path: '', redirectTo: '/events', pathMatch: 'full' },
@@ -48,11 +54,12 @@ const appRoutes: Routes = [
     ParticipantsComponent,
     AdminComponent,
     EditComponent,
+    ModalEventComponent,
     
   ],
 
   bootstrap: [AppComponent],
-  providers: [HttpClientModule, EventsService, ParticipantsService, AdminService],
-  entryComponents: [ModalComponent, AdminComponent]
+  providers: [HttpClientModule, EventsService, ParticipantsService, AdminService, EditService],
+  entryComponents: [ModalComponent, AdminComponent, ModalEventComponent]
 })
 export class AppModule { }

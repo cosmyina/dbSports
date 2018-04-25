@@ -1,0 +1,24 @@
+<div class="modal__box">
+  <form class="modal__content" (ngSubmit)="onAddEvent(modalEventForm)" #modalEventForm="ngForm" novalidate >
+   
+    
+    <h2 class="title">Add event</h2>
+    <div  class="inputs__container">
+      <input type="text" class="input"  placeholder="Name" [(ngModel)]="events.name" required  name="name" >
+      <input type="text" class="input" name="location" placeholder="Location" [(ngModel)]="events.location"  required >
+      <input type="number" class="input" name="day" placeholder="Day" [(ngModel)]="events.day" required >
+      <input type="text" class="input" name="month" placeholder="Month" [(ngModel)]="events.month" required >
+      <textarea class="textarea" name="description" placeholder = "Description" cols="28" rows="7"  [(ngModel)]="events.description" required></textarea>
+        
+          
+        
+  
+    </div>
+   
+    <div class="modal__buttons">
+        <button type="button" (click)="bsModalRef.hide()" class="grayBtn">Cancel</button>
+        <button type="submit" class="button">Add</button>
+    
+    </div>
+  </form>
+</div>

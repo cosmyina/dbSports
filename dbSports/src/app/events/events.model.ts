@@ -4,6 +4,7 @@ export class Events {
     location: string;
     day: number;
     month: string;
+    description: string;
   }
 
  

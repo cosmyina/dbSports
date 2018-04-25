@@ -19,10 +19,6 @@ public class Registration {
     private Competition competition;
 
     @ManyToOne(cascade = REFRESH)
-    @JoinColumn(name = "race_id")
-    private Race race;
-
-    @ManyToOne(cascade = REFRESH)
     @JoinColumn(name = "competitor_id")
     private Competitor competitor;
 
@@ -42,14 +38,6 @@ public class Registration {
         this.competition = competition;
     }
 
-    public Race getRace() {
-        return race;
-    }
-
-    public void setRace(Race race) {
-        this.race = race;
-    }
-
     public Competitor getCompetitor() {
         return competitor;
     }
@@ -63,7 +51,6 @@ public class Registration {
         return "Registration{" +
                 "id=" + id +
                 ", competition=" + competition +
-                ", race=" + race +
                 ", competitor=" + competitor +
                 '}';
     }
@@ -72,7 +59,6 @@ public class Registration {
 
         private Long id;
         private Competition competition;
-        private Race race;
         private Competitor competitor;
 
         private RegistrationBuilder() {
@@ -92,10 +78,6 @@ public class Registration {
             return this;
         }
 
-        public RegistrationBuilder withRace(Race race) {
-            this.race = race;
-            return this;
-        }
 
         public RegistrationBuilder withCompetitor(Competitor competitor) {
             this.competitor = competitor;
@@ -106,7 +88,6 @@ public class Registration {
             Registration registration = new Registration();
             registration.setId(id);
             registration.setCompetition(competition);
-            registration.setRace(race);
             registration.setCompetitor(competitor);
             return registration;
         }

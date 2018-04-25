@@ -48,7 +48,7 @@ public class CategoryResource {
 
     @GetMapping
     public List<Category> findAll() {
-        this.categoryService.logURI("THTHTHTH");
+        //this.categoryService.logURI("THTHTHTH");
         return this.categoryService.findAll();
     }
 
