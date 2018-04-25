@@ -6,9 +6,9 @@
     
     <h2 class="title">Register</h2>
     <div  class="inputs__container">
-      <input type="text" class="input"  placeholder="First name" [(ngModel)]="participants.firstname" required minlength="5" name="firstname" >
-      <input type="text" class="input" name="lastname" placeholder="Last name" [(ngModel)]="participants.lastname"  required minlength="5">
-      <input type="email" class="input" name="email" placeholder="firstname.lastname@gmail.com" [(ngModel)]="participants.email" required minlength="5" >
+      <input type="text" class="input"  placeholder="First name" [(ngModel)]="participants.firstname" required  name="firstname" >
+      <input type="text" class="input" name="lastname" placeholder="Last name" [(ngModel)]="participants.lastname"  required >
+      <input ngType="email" class="input" name="email" placeholder="firstname.lastname@gmail.com" [(ngModel)]="participants.email" required minlength="5" >
       <label>Gender: 
       <div class="btn-group" btnRadioGroup name="gender" [(ngModel)]="participants.gender" required>
           <label class="btn btn-success" btnRadio="Male" 

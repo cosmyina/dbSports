@@ -1,111 +1,83 @@
-.content {
-	padding-bottom: 10px;
+.modal__box {
+    width: 500px;
+    height: 750px;
+    background: white;
+    box-shadow: 0 0 26px 6px;
+   margin: 0 auto;
 }
 
-.main-content {
-	margin: 0 auto;
-	width: 80%;
-	padding: 0 15px;
+.modal__content {
+    padding: 50px 75px;
 }
 
-
-.descriere{
-  font-family: 'Cardo', serif;
-  font-size:16px;
-  text-align: justify;
-
+.inputs__container {
+    display:block;
+    justify-content: space-between;
+   
+    margin-top: 50px;
+}
+.gender{
+   display: flex;
+}
+.genderBtn{
+   
+   
+    height: 15px;
+    width: 15px;
+    background-color: #0000CD;
+    border-radius: 50%;
+}
+.genderBtn:after{
+    top:9px;
+    left:9px;
+    height:8px;
+    border-radius: 50%;
+    background: white;
+}
+.input {
+    width: 400px;
+    height: 35px;
+    display: block;
+    border: 1px solid #9b9b9b;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Cardo', serif;
+    padding: 0 5px;
+    margin-bottom: 25px;
 }
 
-.posts-con article {
-	border-bottom: 1px solid #d8dbe1;
-	padding-bottom: 40px;
-	margin-bottom: 41px;
-}
-.posts-con article.last {
-	border-bottom: none;
-}
-
-.posts-con .current-date {
-	margin-top: 9px;
-}
-
-.posts-con h3 {
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 22px;
-	padding-top: 4px;
-	padding-bottom: 22px;
-}
-
-.posts-con .info {
-	overflow: hidden;
-}
-
-.posts-con .info-line {
-	font-size: 16px;
-	line-height: 20px;
-  padding-bottom: 20px;
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+  }
   
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; /* red */
+  }
+.input--big {
+    width: 100%;
 }
 
-.posts-con .info-line .time {
-	padding: 0 20px 0 25px;
-	background: url() no-repeat 0 3px;
-	display: inline-block;
+.textarea {
+    display: block;
+    border: 1px solid #9b9b9b;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Cardo', serif;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.posts-con .info-line .place {
-	padding: 0 20px 0 25px;
-	background: url() no-repeat 0 3px;
-  display: inline-block;
-  font-size:20px;
+.modal__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 
-.events {
-	padding: 57px 0 100px 0;
+.button--pink {
+    background: #FFE3E3;
 }
-
-.events article {
-	width: 25%;
-	float: left;
-	padding: 0 15px;
-	font-size: 14px;
-  line-height: 20px;
-  font-family: 'Cardo', serif;
-}
-
-.current-date {
-	width: 70px;
-	float: left;
-	border-radius: 4px;
-	background-color:#0000CD;
-	margin-right: 30px;
-	margin-top: 4px;
-	text-align: center;
-	font-family: 'BebasNeue';
-	color: #fff;
-	font-size: 16px;
-	padding: 3px;
-	line-height: 20px;
-}
-
-.current-date .day {
-	background-color: #fff;
-	color: #0000CD;
-	font-size: 40px;
-	border-radius: 4px;
-	line-height: 49px;
-	margin-top: 3px;
-	font-weight: bold;
-}
-
-.events .info {
-	overflow: hidden;
-}
-
-.events .info p {
-	padding-bottom: 13px;
-	min-height: 153px;
+.modal-dialog {
+  max-width: 1000px;
 }
 .button {
     background: #76B3FA;
@@ -115,26 +87,29 @@
     text-decoration: none;
     font-size: 1.45em;
     margin: 0 15px;
-    margin: 50px;
   }
   
-  /* Hover state animation applied here */
+
   .button:hover { 
     -webkit-animation: hover 1200ms linear 2 alternate;
     animation: hover 1200ms linear 2 alternate;
-  }
-  
-  /* Active state animation applied here */
-  .button:active {
-    -webkit-animation: active 1200ms ease 1 alternate;
-    animation: active 1200ms ease 1 alternate; 
     background: #5F9BE0;
   }
-  .gray { background: #D2D2D2; }
-  .gray:active { background: #b9b9b9; }
   
 
-  /* Hover state animation keyframes below */
+  .grayBtn { background: #D2D2D2; 
+    border-radius: 100px;
+    padding: 20px 60px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.45em;
+    margin: 0 15px;}
+    .grayBtn:hover { 
+        -webkit-animation: hover 1200ms linear 2 alternate;
+        animation: hover 1200ms linear 2 alternate;
+        background: rgb(112, 123, 136);
+      }
+ 
   
   @-webkit-keyframes hover { 
     0% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
