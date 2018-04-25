@@ -23,6 +23,7 @@
 	display: block;
 	padding-bottom: 37px;
 	font-weight: 300;
+
 }
 
 #footer a {
@@ -57,19 +58,30 @@
 	left: 0;
 	content: "";
 }
+.col-1{
+	-webkit-box-flex: 0;
+    -ms-flex: 0 0 8.333333%;
+	flex: 0 0 8.333333%;
+	max-width: 99.333333%;
+}
+.col-2{
+	-webkit-box-flex: 0;
+    -ms-flex: 0 0 8.333333%;
+	flex: 0 0 8.333333%;
+	max-width: 99.333333%;
+}
+
 
 #footer .col-1 .mail {
 	padding-bottom: 21px;
 	margin-bottom: 25px;
-	width: 30px;
-	text-align: center;
+	
 }
 
 #footer .col-1 .mail a:after {
 	background: url(/assets/images/ico_contacts.png) no-repeat 0 -32px;
 	height: 22px;
 	top: -1px;
-	width:50px;
 }
 
 #footer .col-1 .phone a:after {
@@ -102,7 +114,7 @@
 	padding-bottom: 17px;
 }
 
-/* #footer .col-3 li {
+#footer .col-3 li {
 	padding: 0 10px 10px 0;
 	float: left;
 
@@ -130,15 +142,16 @@
 	left: 0;
 	bottom: 0;
 	width: 35px;
-} */
+}
 
 
 .fb{
 	background-position: 9px -27px;
 	width: 110px;
+	
 }
 .col-4{
-	position: relative;
+	position: absolute;;
 }
 #footer input {
 	border-radius: 4px;
