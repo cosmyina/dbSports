@@ -16,10 +16,16 @@ import { ParticipantsComponent } from './participants/participants.component';
 import { ParticipantsService } from './participants/participants.service';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { AdminComponent } from './admin/admin.component';
+import { EditComponent } from './edit/edit.component';
+import { AdminService } from './admin/admin.component.service';
 const appRoutes: Routes = [
-  { path: 'events', component: EventsComponent },
+  { path: 'events',  component: EventsComponent },
   { path: '', redirectTo: '/events', pathMatch: 'full' },
   { path: 'participants', component: ParticipantsComponent },
+  { path: 'admin', component: AdminComponent },
+  { path: 'admin/edit', component: EditComponent }
+
 ];
 
 
@@ -41,10 +47,13 @@ const appRoutes: Routes = [
     FooterComponent,
     ModalComponent,
     ParticipantsComponent,
-  
+    AdminComponent,
+    EditComponent,
+    
   ],
+
   bootstrap: [AppComponent],
-  providers: [HttpClientModule, EventsService, ParticipantsService],
-  entryComponents: [ModalComponent]
+  providers: [HttpClientModule, EventsService, ParticipantsService, AdminService],
+  entryComponents: [ModalComponent, AdminComponent]
 })
 export class AppModule { }

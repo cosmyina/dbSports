@@ -5,10 +5,5 @@ export class Events {
     month: string;
     day: number;
     description: string;
-    category: Category;
    
   }
-export class Category{
-  id: number;
-  name: string;
-}

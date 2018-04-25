@@ -5,4 +5,5 @@ export class Participants {
     email: string;
     gender: string;
     eventId: number;
+    eventName: string;
   }
