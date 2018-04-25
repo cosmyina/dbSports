@@ -1,6 +1,7 @@
 package ro.db.appl.service;
 
 import org.springframework.data.domain.Pageable;
+import ro.db.appl.domain.Competition;
 import ro.db.appl.domain.Competitor;
 import ro.db.appl.domain.Registration;
 
@@ -15,4 +16,7 @@ public interface RegistrationService {
     Registration findById(Long id);
 
     Competitor findByRegistration(Long id);
+
+    Registration findByCompetitionAndCompetitor(Competition competition, Competitor competitor);
+
 }
