@@ -10,21 +10,21 @@ export class EditService {
 
   constructor(private http: HttpClient) { }
 
-  getParticipants(): Observable<Participants[]> {
-    return this.http.get('http://localhost:3000/participants') as Observable<Participants[]>;
-  }
+//   getParticipants(): Observable<Participants[]> {
+//     return this.http.get('http://localhost:3000/participants') as Observable<Participants[]>;
+//   }
 
-  postParticipants(participants :Participants): Observable<Participants> {
-    return this.http.post('http://localhost:3000/participants/', participants) as Observable<Participants>;
-  }
+//   postParticipants(participants :Participants): Observable<Participants> {
+//     return this.http.post('http://localhost:3000/participants/', participants) as Observable<Participants>;
+//   }
 
-  putParticipants(participants: Participants, id: number): Observable<Participants> {
-    return this.http.put(`http://localhost:3000/participants/${id}`, participants) as Observable<Participants>;
-  }
+//   putParticipants(participants: Participants, id: number): Observable<Participants> {
+//     return this.http.put(`http://localhost:3000/participants/${id}`, participants) as Observable<Participants>;
+//   }
 
-  deleteParticipants(id: number): Observable<Participants> {
-    return this.http.delete(`http://localhost:3000/participants/${id}`) as Observable<Participants>;
-  }
+//   deleteParticipants(id: number): Observable<Participants> {
+//     return this.http.delete(`http://localhost:3000/participants/${id}`) as Observable<Participants>;
+//   }
   getEvents(): Observable<Events[]> {
     return this.http.get('http://localhost:3000/events') as Observable<Events[]>;
   }

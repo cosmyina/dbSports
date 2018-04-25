@@ -23,7 +23,7 @@ export class AdminService {
  
   logout() {
     localStorage.removeItem("user");
-    this.router.navigate(['Admin']);
+    this.router.navigate(['/events']);
   }
  
   login(user){
